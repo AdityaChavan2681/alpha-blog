@@ -1,18 +1,26 @@
 @import 'bootstrap/dist/css/bootstrap';
 
-.navbar {
-  position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 0.5rem 1rem;
+  .navbar-light .navbar-brand {
+  font-size: 3rem;
+}
+
+h1 {
+  color: red;
 }
 
 .bg-light {
-      background-color: #7496b9 !important;
-    }
+  background-color: #000000 !important;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+#logo{
+  float: left;
+  font-size: 1.7rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  font-weight: bold;
+}

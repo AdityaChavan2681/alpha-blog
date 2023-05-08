@@ -4,6 +4,9 @@
 // that code so it'll be compiled.
 
 require("@rails/ujs").start()
+//= require jquery3
+//= require popper
+//= require bootstrap
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
@@ -17,3 +20,4 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 
 import "bootstrap"
+
