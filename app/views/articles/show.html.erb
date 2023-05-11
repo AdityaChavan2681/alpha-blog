@@ -10,7 +10,7 @@
             </div>
             <div class="card-body">
               <h5 class="card-title"><%= @article.title %></h5>
-              <p class="card-text"><%= @article.description%></p>
+              <div class="card-text text-left"><%= simple_format(@article.description)%></div>
               <a><%= link_to "Edit", edit_article_path, class:"btn btn-outline-info"%><a>
               <a><%= link_to "Delete", article_path, method: :delete, class:"btn btn-outline-danger", data: { confirm: "Are you sure?" }%><a>
             </div>
