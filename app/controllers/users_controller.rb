@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
   before_action :require_user, only: [:edit, :update]
-  before_action :require_same_user, except: [:destroy]  
+  before_action :require_same_user, only: [:edit, :update,:destroy]  
 
 
   def new
@@ -44,6 +44,7 @@ class UsersController < ApplicationController
     @user.destroy
     session[:user_id] = nil
     flash[:notice] = "Account deleted successfully!"
+    redirect_to articles_path
   end
 
   private 
