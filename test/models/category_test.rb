@@ -1,5 +1,3 @@
-require 'test-helper'
-
 class CategoryTest < ActiveSupport::TestCase
 
  test "category should be valid" do
