@@ -1,4 +1,4 @@
-require 'application_helper'
+require 'test-helper'
 
 class CategoryTest < ActiveSupport::TestCase
 
